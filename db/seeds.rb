@@ -19,7 +19,7 @@ User3 = User.create({username: 'testuser',email: 'testuser@gmail.com', password:
 User4 = User.create({username: 'usertodelete',email:'usertodelete@gmail.com',password: 'usertodelete'})
 User5 = User.create({username: 'usertochange',email:'usertochange@gmail.com',password: 'usertochange'})
 
-                    
+
 asanasarray = [
   ['Warrior1','Virabhadrasana A','yoga-30',1,'Take a wide stance and reach fingertips to the sky'],
   ['Warrior2','Virabhadrasana B','yoga-11',1,'Take a wide stance and reach for the front and back of room'],
@@ -70,7 +70,19 @@ asanasarray = [
   ['Boat','Navasana','yoga-85',2,'use sitting bones as a fulcrum to balance body. keep chest open and spine straight. bend knees if needed.'],
   ['Lotus', 'Padmasana','yoga-10',3,'cross legs with right foot and left thigh and left foot and right thigh. straighten spine upright.'],
   ['Cat/Dog Tilts', 'Bidalasana','yoga-54',2,'on inhale drop belly and lift gaze to cow. On exhale arch back to ceiling press up to cat.'],
-  ['Wide Leg Forward Fold w/Twists','Parivrtta Ardha Padottanasana','yoga-24','2','spread feet apart. Fold forward. lay palm on mat and twist to side of room. repeat other side']
+  ['Wide Leg Forward Fold w/Twists','Parivrtta Ardha Padottanasana','yoga-24','2','spread feet apart. Fold forward. lay palm on mat and twist to side of room. repeat other side'],
+  #newposes
+  ['Handstand','Adho Mukha Vrksasana','','balance body evenly on both palms. reach toes to the sky. press out through the palms'],
+  ['Fire Log','Agnistambhasana','','place right foot on left thigh. stay balanced on sitting bones. fold forward hinging at the hips']
+  ['Puppy','Anahatasana','','reach fingers to the front of the mat. let chest drop and keep hips high'],
+  ['Half Bound Lotus Intense Stretch','Ardha Baddha Padmottanasana','','use a strap for support for modification. fold forward hinging at hips. use block on floor for modification'],
+  ['Half Lord of the Fishes','Ardha Matsyendrasana','','stay balanced on sitting bones. twist spine with a solid foundation. press navel to spine'],
+  ['Eight-Angle','Astavakrasana','','keep wrists and shoulders stable. activate inner adductors'],
+  ['Bound Angle','Baddha Konasana','','keep soles pressed together. let knees fall to the floor. hold feet and fold forward'],
+  ['Crane','Bakasana','','shift weight forward to help lift feet off mat']
+
+
+
 ]
 
 asanacategories = [
@@ -94,7 +106,7 @@ asanas = asanasarray.map.with_index do |asanadata,index|
   Asana.create({sanskritname: asanadata[1],englishname: asanadata[0],picurl: asanadata[2],duration: asanadata[3],cues: asanadata[4]})
 end
 
-categories = asanacategories.map do |cat| 
+categories = asanacategories.map do |cat|
   catasanas = cat[1].map { |num| asanas[num] }
   Category.createcategory(name: cat[0], asanarray: catasanas)
  end
@@ -113,6 +125,3 @@ User4.create_sequence(name: 'VinyassaA', sequence_array: VinyassaA)
 User4.create_sequence(name: 'VinyassaB', sequence_array: VinyassaB)
 User5.create_sequence(name: 'VinyassaA', sequence_array: VinyassaA)
 User5.create_sequence(name: 'VinyassaB', sequence_array: VinyassaB)
-
-
-
