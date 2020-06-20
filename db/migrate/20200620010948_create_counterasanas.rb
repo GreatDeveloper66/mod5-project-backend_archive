@@ -3,6 +3,7 @@ class CreateCounterasanas < ActiveRecord::Migration[6.0]
     create_table :counterasanas do |t|
       t.integer :counter_id
       t.integer :countee_id
+      t.timestamps
     end
   end
 end
