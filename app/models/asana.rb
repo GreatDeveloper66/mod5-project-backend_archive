@@ -3,14 +3,14 @@ class Asana < ApplicationRecord
   has_many :sequences, through: :asanasequences
   has_many :asanacategories
   has_many :categories, through: :asanacategories
-  has_many :opener_asanas, foreign_key: :opener_id, class_name: 'OpeningAsana'
-  has_many :openees, through: :opener_asanas
-  has_many :counter_asanas, foreign_key: :counter_id, class_name: 'CounterAsana'
-  has_many :countees, through: :counter_asanas
-  has_many :stabalizer_asanas, foreign_key: :stabalizerr_id, class_name: 'StabalizingAsana'
-  has_many :stabalizee, through: :stabalizer_asanas
-  has_many :preparer_asanas, foreign_key: :preparer_id, class_name: 'PreparationAsana'
-  has_many :preparees, through: :preparer_asanas
+  has_many :openee_asanas, foreign_key: :openee_id, class_name: 'OpeningAsana'
+  has_many :openers, through: :openee_asanas
+  has_many :countee_asanas, foreign_key: :countee_id, class_name: 'CounterAsana'
+  has_many :counters, through: :countee_asanas
+  has_many :stabalizee_asanas, foreign_key: :stabalizee_id, class_name: 'StabalizingAsana'
+  has_many :stabalizers, through: :stabalizee_asanas
+  has_many :preparee_asanas, foreign_key: :preparee_id, class_name: 'PreparationAsana'
+  has_many :preparers, through: :preparee_asanas
 
 
   def self.createasana(asanarray)
