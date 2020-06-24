@@ -11,6 +11,11 @@ Category.destroy_all
 Sequence.destroy_all
 Asanacategory.destroy_all
 Asanasequence.destroy_all
+Counterasanas.destroy_all
+Stabalizingasanas.destroy_all
+Preparationasanas.destroy_all
+Openingasanas.destroy_all
+
 
 
 User1 = User.create({username: 'Allan',email: 'allan@gmail.com',password: '%$yuijc'})
