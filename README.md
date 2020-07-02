@@ -1,24 +1,28 @@
-# README
+# Yoga Fitness App backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This directory is the backend code for the Yoga Fitness App. This app is an interactive project that allows users to develop their own yoga workout sessions.
 
-Things you may want to cover:
+##Installation
 
-* Ruby version
+1. Make sure PostgreSQL is installed on your System. Visit https://www.postgresql.org and download and install package
+2. Make sure Ruby version 2.6.6 is installed. For mac, 'brew install ruby'. For windows, go to https://www.ruby-lang.org and download package
+3. Clone the repository. SSH: git clone git@github.com:GreatDeveloper66/mod5-project-backend.git. HTTPS: git clone https://github.com/GreatDeveloper66/mod5-project-backend.git
+4. Install gems. run 'bundle install' to install all dependency gems.
+5. Create, migrate and seed database. run: 'rails db:create', 'rails db:migrate', 'rails db:seed'
 
-* System dependencies
+## Usage
 
-* Configuration
+If running this application on your local machine,
 
-* Database creation
+Open terminal:
+1. move to mod-project-backend
+2. run 'rails s -p 5000'
+3. Database will open on localhost:5000
 
-* Database initialization
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* How to run the test suite
+Please make sure to update tests as appropriate.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
