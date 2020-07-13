@@ -24,7 +24,7 @@ class Asana < ApplicationRecord
     counter_asanas.each do |counter_asana|
       counter_id = counter_asana.id
       countee_id = self.id
-      CounterAsana.create({counter_id => counter_id, :countee_id => countee_id})
+      CounterAsana.create({:counter_id => counter_id, :countee_id => countee_id})
     end
   end
 
@@ -32,7 +32,7 @@ class Asana < ApplicationRecord
     opener_asanas.each do |opener_asana|
       opener_id = opener_asana.id
       openee_id = self.id
-      OpeningAsana.create({opener_id => opener_id, :openee_id => openee_id})
+      OpeningAsana.create({:opener_id => opener_id, :openee_id => openee_id})
     end
   end
 
@@ -40,7 +40,15 @@ class Asana < ApplicationRecord
     preparer_asanas.each do |preparer_asana|
       preparer_id = preparer_asana.id
       preparee_id = self.id
-      PrearationAsana.create({preparer_id => preparer_id, :preparee_id => preparee_id})
+      PrearationAsana.create({:preparer_id => preparer_id, :preparee_id => preparee_id})
+    end
+  end
+
+  def createstabalizers(stabalizer_asnas)
+    stabalizer_asanas.each do |stabalizer_asana|
+      stabalizer_id = stabalizer_asana.id
+      stabalizeee_id = self.id
+      PrearationAsana.create({:stabalizer_id => stabalizer_id, :stabalizee_id => stabalizee_id})
     end
   end
 
