@@ -20,4 +20,11 @@ class Asana < ApplicationRecord
                   :duration => asanarray[3],
 				  :cues => asanarray[4]})
   end
+  def createcounters(counter_asnas)
+    counter_asanas.each do |counter_asana|
+      opener_id = counter_asana.id
+      openee_id = self.id
+      CounterAsana.create({"counter_id => opener_id, :countee_id => openee_id})
+    end
+  end
 end
