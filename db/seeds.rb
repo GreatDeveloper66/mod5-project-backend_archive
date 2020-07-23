@@ -11,10 +11,7 @@ Category.destroy_all
 Sequence.destroy_all
 Asanacategory.destroy_all
 Asanasequence.destroy_all
-Counterasanas.destroy_all
-Stabalizingasanas.destroy_all
-Preparationasanas.destroy_all
-Openingasanas.destroy_all
+
 
 
 
@@ -78,7 +75,7 @@ asanasarray = [
   ['Wide Leg Forward Fold w/Twists','Parivrtta Ardha Padottanasana','yoga-24','2','spread feet apart. Fold forward. lay palm on mat and twist to side of room. repeat other side'],
   #newposes
   ['Handstand','Adho Mukha Vrksasana','','balance body evenly on both palms. reach toes to the sky. press out through the palms'],
-  ['Fire Log','Agnistambhasana','','place right foot on left thigh. stay balanced on sitting bones. fold forward hinging at the hips']
+  ['Fire Log','Agnistambhasana','','place right foot on left thigh. stay balanced on sitting bones. fold forward hinging at the hips'],
   ['Puppy','Anahatasana','','reach fingers to the front of the mat. let chest drop and keep hips high'],
   ['Half Bound Lotus Intense Stretch','Ardha Baddha Padmottanasana','','use a strap for support for modification. fold forward hinging at hips. use block on floor for modification'],
   ['Half Lord of the Fishes','Ardha Matsyendrasana','','stay balanced on sitting bones. twist spine with a solid foundation. press navel to spine'],
