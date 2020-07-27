@@ -11,10 +11,7 @@ Category.destroy_all
 Sequence.destroy_all
 Asanacategory.destroy_all
 Asanasequence.destroy_all
-Counterasanas.destroy_all
-Stabalizingasanas.destroy_all
-Preparationasanas.destroy_all
-Openingasanas.destroy_all
+
 
 
 
@@ -77,33 +74,33 @@ asanasarray = [
   ['Cat/Dog Tilts', 'Bidalasana','yoga-54',2,'on inhale drop belly and lift gaze to cow. On exhale arch back to ceiling press up to cat.'],
   ['Wide Leg Forward Fold w/Twists','Parivrtta Ardha Padottanasana','yoga-24','2','spread feet apart. Fold forward. lay palm on mat and twist to side of room. repeat other side'],
   #newposes
-  ['Handstand','Adho Mukha Vrksasana','','balance body evenly on both palms. reach toes to the sky. press out through the palms'],
-  ['Fire Log','Agnistambhasana','','place right foot on left thigh. stay balanced on sitting bones. fold forward hinging at the hips']
-  ['Puppy','Anahatasana','','reach fingers to the front of the mat. let chest drop and keep hips high'],
-  ['Half Bound Lotus Intense Stretch','Ardha Baddha Padmottanasana','','use a strap for support for modification. fold forward hinging at hips. use block on floor for modification'],
-  ['Half Lord of the Fishes','Ardha Matsyendrasana','','stay balanced on sitting bones. twist spine with a solid foundation. press navel to spine'],
-  ['Eight-Angle','Astavakrasana','','keep wrists and shoulders stable. activate inner adductors'],
-  ['Bound Angle','Baddha Konasana','','keep soles pressed together. let knees fall to the floor. hold feet and fold forward'],
-  ['Crane','Bakasana','','shift weight forward to help lift feet off mat']
+  ['Handstand','Adho Mukha Vrksasana','yoga-100','balance body evenly on both palms. reach toes to the sky. press out through the palms'],
+  ['Fire Log','Agnistambhasana','yoga-101','place right foot on left thigh. stay balanced on sitting bones. fold forward hinging at the hips'],
+  ['Puppy','Anahatasana','yoga-102','reach fingers to the front of the mat. let chest drop and keep hips high'],
+  ['Half Bound Lotus Intense Stretch','Ardha Baddha Padmottanasana','yoga-103','use a strap for support for modification. fold forward hinging at hips. use block on floor for modification'],
+  ['Half Lord of the Fishes','Ardha Matsyendrasana','yoga-104','stay balanced on sitting bones. twist spine with a solid foundation. press navel to spine'],
+  ['Eight-Angle','Astavakrasana','yoga-105','keep wrists and shoulders stable. activate inner adductors'],
+  ['Bound Angle','Baddha Konasana','yoga-106','keep soles pressed together. let knees fall to the floor. hold feet and fold forward'],
+  ['Crane','Bakasana','yoga-107','shift weight forward to help lift feet off mat']
 
 
 
 ]
 
 asanacategories = [
-  ['seated',[3,16,22,28,29,43,44,45,46,47,48]],
+  ['seated',[3,16,22,28,29,43,44,45,46,47,48,51,53,54,55]],
   ['standing',[0,1,2,4,5,6,7,10,11,12,14,17,30,31,32,36,37,49]],
-  ['restorative',[16,23,28]],
-  ['hip opener',[0,1,3,29,30]],
+  ['restorative',[16,23,28,52]],
+  ['hip opener',[0,1,3,29,30,55]],
   ['prone',[9,13]],
-  ['beginner',[0,1,4,5,6,8,9,11,13,16,22,23,28,29,33,34,35,41,42,43,44,49]],
+  ['beginner',[0,1,4,5,6,8,9,11,13,16,22,23,28,29,33,34,35,41,42,43,44,49,51,55]],
   ['intermediate',[2,3,7,10,12,14,17,24,25,26,30,31,36,37,38,40,47,49] ],
   ['advanced',[27,32,39,45,46,48]],
-  ['forward bend',[4,6,8,12,16,17,24,34,41,44,45,46,49]],
+  ['forward bend',[4,6,8,12,16,17,24,34,41,44,45,46,49,53]],
   ['backward bend',[9,10,13,33,39,40,42,49]],
-  ['twist',[15,31,36,37,45]],
-  ['balance',[2,5,7,10,11,15,30,31,32,36,37,38,46]],
-  ['inversions',[5,8,13,14,15,17,24,25,26,32,39,40]],
+  ['twist',[15,31,36,37,45,54]],
+  ['balance',[2,5,7,10,11,15,30,31,32,36,37,38,46,54,56]],
+  ['inversions',[5,8,13,14,15,17,24,25,26,32,39,40,50]],
   ['salutations',[18,19,20,21]]
 ]
 
